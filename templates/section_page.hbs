@@ -1,11 +1,23 @@
+<div id="hero-banner" data-page="home">
+    <div class="hero-container" data-alignment="left" data-font="dark" style="background-image:url({{settings.homepage_background_image}});">
+        <div class="hero-content">
+            <h1 class="white-text">{{section.name}} help</h1>
+            <div class="search-container">
+
+                {{search submit=false instant=settings.instant_search class='search search-full'}}
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="container-divider"></div>
 <div class="container">
   <nav class="sub-nav">
     {{breadcrumbs}}
-    {{search submit=false}}
   </nav>
 
-  <div class="section-container">
+
+  <div class="container">
     <section class="section-content">
       <header class="page-header">
         <h1>{{section.name}}</h1>
@@ -16,6 +28,7 @@
           <p class="page-header-description">{{section.description}}</p>
         {{/if}}
       </header>
+
 
       {{#if section.sections}}
         <ul class="section-list section-list--collapsed">
@@ -32,7 +45,6 @@
           <a tabindex="0" class="see-all-sections-trigger" aria-hidden="true" id="see-all-sections-trigger" title="{{t 'see_all_sections'}}">{{t 'see_all_sections'}}</a>
         </ul>
       {{/if}}
-
 
       {{#if section.articles}}
         <ul class="article-list">

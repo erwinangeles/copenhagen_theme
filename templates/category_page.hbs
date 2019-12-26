@@ -1,52 +1,56 @@
+<div id="hero-banner" data-page="home">
+    <div class="hero-container" data-alignment="left" data-font="dark" style="background-image:url({{settings.homepage_background_image}});">
+        <div class="hero-content">
+            <h1 class="white-text">{{category.name}} help</h1>
+            <div class="search-container">
+
+                {{search submit=false instant=settings.instant_search class='search search-full'}}
+            </div>
+        </div>
+    </div>
+</div>
 <div class="container-divider"></div>
 <div class="container">
   <nav class="sub-nav">
     {{breadcrumbs}}
-    {{search submit=false}}
   </nav>
+    <div class="row justify-content-md-center">
+    {{#each sections}}
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="cat-section hoverImages" data-link="{{url}}">
+                      {{#is id 360006681334}}<img class="cat-img" src="{{asset 'order.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
+                      {{#is id 360006706793}}<img class="cat-img" src="{{asset 'summit.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
+                      {{#is id 360006681294}}<img class="cat-img" src="{{asset 'video.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
+                      {{#is id 360006681294}}<img class="cat-img" src="{{asset 'video.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
+                      {{#is id 360006706773}}<img class="cat-img" src="{{asset 'event.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
+                      {{#is id 360006706753}}<img class="cat-img" src="{{asset 'app.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
+                      {{#is id 360006706733}}<img class="cat-img" src="{{asset 'audio.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
+                      {{#is id 360006706713}}<img class="cat-img" src="{{asset 'course.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
+                      {{#is id 360005084393}}<img class="cat-img" src="{{asset 'membership.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
+                      {{#is id 115001418187}}<img class="cat-img" src="{{asset 'mail.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
+                      {{#is id 360006723153}}<img class="cat-img" src="{{asset 'ebook.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
+                      {{#is id 360006681274}}<img class="cat-img" src="{{asset 'order.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
+                      {{#is id 360005169893}}<img class="cat-img" src="{{asset 'order.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
+                      {{#is id 115001585708}}<img class="cat-img" src="{{asset 'about.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
+                      {{#is id 360004886874}}<img class="cat-img" src="{{asset 'mail.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
+                      {{#is id 360005084193}}<img class="cat-img" src="{{asset 'legal.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
+                      {{#is id 206051527}}<img class="cat-img" src="{{asset 'publishing.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
+                      {{#is id 360005076714}}<img class="cat-img" src="{{asset 'tracking.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
+                      {{#is id 360005084313}}<img class="cat-img" src="{{asset 'affiliate.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
+                      {{#is id 115001432288}}<img class="cat-img" src="{{asset 'checkout.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
+                      {{#is id 206057748}}<img class="cat-img" src="{{asset 'return.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
+                      {{#is id 360005077433}}<img class="cat-img" src="{{asset 'wholesale.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
+                      {{#is id 115001583008}}<img class="cat-img" src="{{asset 'job.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
+                      {{#is id 360005039214}}<img class="cat-img" src="{{asset 'faq.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
+                      {{#is id 115001576247}}<img class="cat-img" src="{{asset 'faq.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
 
-  <div class="category-container">
-    <div class="category-content">
-      <header class="page-header">
-        <h1>{{category.name}}</h1>
-        {{#if category.description}}
-          <p class="page-header-description">{{category.description}}</p>
-        {{/if}}
-      </header>
+                      <a href="#">{{name}}</a>
+                  </div>
+          </div>
+    {{/each}}
 
-      <div class="section-tree">
-        {{#each sections}}
-          <section class="section">
-            <h2 class="section-tree-title">
-              <a href="{{url}}">{{name}}</a>
-            </h2>
-            {{#if articles}}
-              <ul class="article-list">
-                {{#each articles}}
-                  <li class="article-list-item{{#if promoted}} article-promoted{{/if}}">
-                    {{#if promoted}}
-                      <span data-title="{{t 'promoted'}}" class="icon-star"></span>
-                    {{/if}}
-                    <a href="{{url}}" class="article-list-link">{{title}}</a>
-                    {{#if internal}}
-                      <span class="icon-lock" title="{{t 'internal'}}"></span>
-                    {{/if}}
-                  </li>
-                {{/each}}
-              </ul>
-              {{#if more_articles}}
-                <a href="{{url}}" class="see-all-articles">
-                  {{t 'show_all_articles' count=article_count}}
-                </a>
-              {{/if}}
-            {{/if}}
-          </section>
-        {{else}}
-          <i class="category-empty">
-            <a href="{{category.url}}">{{t 'empty'}}</a>
-          </i>
-        {{/each}}
-      </div>
-    </div>
+
+
   </div>
+  
 </div>
