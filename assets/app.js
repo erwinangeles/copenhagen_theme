@@ -44,7 +44,11 @@ $(document).ready(function () {
     $(document).on('click', '.hoverImages', function(e) {
       e.preventDefault();
       $(location).attr('href', $(this).data('link'))
-
     });
 
+    //if no background image, will use default green
+    let section_img = $('#section-bg').css("background-image");
+    if(section_img.includes('https://hayhouse.zendesk.com/')){
+      $('#section-bg').css("background-image", 'url(https://i.ibb.co/4VRgHYv/help-center-green.jpg)');
+    }
 })

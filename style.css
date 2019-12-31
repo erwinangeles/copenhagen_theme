@@ -4562,3 +4562,16 @@ div.hoverNuggets:hover {
 .card-body{
   min-height: 200px;
 }
+
+.sidenav-item.current-article {
+  color: white !important;
+}
+
+.sidenav-item.current-article, .sidenav-item:hover{
+  color: white !important;
+
+}
+
+.hide-all{
+  display: none;
+}

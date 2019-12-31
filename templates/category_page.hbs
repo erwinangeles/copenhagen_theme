@@ -16,11 +16,21 @@
   </nav>
     <div class="row justify-content-md-center">
     {{#each sections}}
-            <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="col-lg-3 col-md-6 col-sm-12 
+            {{#is id 360006681274}}hide-all{{/is}}
+            {{#is id 360006744014}}hide-all{{/is}}
+            {{#is id 360006706793}}hide-all{{/is}} 
+            {{#is id 360006681294}}hide-all{{/is}}
+            {{#is id 360006706773}}hide-all{{/is}}
+            {{#is id 360006706753}}hide-all{{/is}}
+            {{#is id 360006706733}}hide-all{{/is}}
+            {{#is id 360006706713}}hide-all{{/is}}
+            {{#is id 360006723153}}hide-all{{/is}}
+
+            ">
                   <div class="cat-section hoverImages" data-link="{{url}}">
-                      {{#is id 360006681334}}<img class="cat-img" src="{{asset 'order.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
+                      {{#is id 360006744014}}<img class="cat-img" src="{{asset 'order.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
                       {{#is id 360006706793}}<img class="cat-img" src="{{asset 'summit.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
-                      {{#is id 360006681294}}<img class="cat-img" src="{{asset 'video.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
                       {{#is id 360006681294}}<img class="cat-img" src="{{asset 'video.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
                       {{#is id 360006706773}}<img class="cat-img" src="{{asset 'event.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
                       {{#is id 360006706753}}<img class="cat-img" src="{{asset 'app.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
@@ -29,7 +39,6 @@
                       {{#is id 360005084393}}<img class="cat-img" src="{{asset 'membership.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
                       {{#is id 115001418187}}<img class="cat-img" src="{{asset 'mail.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
                       {{#is id 360006723153}}<img class="cat-img" src="{{asset 'ebook.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
-                      {{#is id 360006681274}}<img class="cat-img" src="{{asset 'order.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
                       {{#is id 360005169893}}<img class="cat-img" src="{{asset 'order.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
                       {{#is id 360005466753}}<img class="cat-img" src="{{asset 'faq.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
                       {{#is id 115001585708}}<img class="cat-img" src="{{asset 'about.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
@@ -44,7 +53,6 @@
                       {{#is id 115001583008}}<img class="cat-img" src="{{asset 'job.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
                       {{#is id 360005039214}}<img class="cat-img" src="{{asset 'faq.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
                       {{#is id 115001576247}}<img class="cat-img" src="{{asset 'faq.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
-
                       <a href="#">{{name}}</a>
                   </div>
           </div>
