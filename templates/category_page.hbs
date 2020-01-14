@@ -17,6 +17,7 @@
     <div class="row justify-content-md-center">
     {{#each sections}}
             <div class="col-lg-3 col-md-6 col-sm-12 
+            {{#is id 360006865034}}hide-all{{/is}}
             {{#is id 360006681274}}hide-all{{/is}}
             {{#is id 360006744014}}hide-all{{/is}}
             {{#is id 360006706793}}hide-all{{/is}} 
@@ -29,6 +30,7 @@
 
             ">
                   <div class="cat-section hoverImages" data-link="{{url}}">
+                      {{#is id 360006840813}}<img class="cat-img" src="{{asset 'account.svg'}}" width="64" style="background-color:#ef8e7f;"/>{{/is}}
                       {{#is id 360006744014}}<img class="cat-img" src="{{asset 'order_black.svg'}}" width="64" style="background-color:#ef8e7f;"/>{{/is}}
                       {{#is id 360006706793}}<img class="cat-img" src="{{asset 'summit.svg'}}" width="64" style="background-color: #E7AFA2;"/>{{/is}}
                       {{#is id 360006681294}}<img class="cat-img" src="{{asset 'video.svg'}}" width="64" style="background-color: #03363D;"/>{{/is}}
@@ -52,10 +54,16 @@
                       {{#is id 115001583008}}<img class="cat-img" src="{{asset 'job.svg'}}" width="64" style="background-color: #30AABC;"/>{{/is}}
                       {{#is id 115001576247}}<img class="cat-img" src="{{asset 'faq.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
                       {{!-- //faq --}}
-                      {{#is id 360006773913}}<img class="cat-img" src="{{asset 'event_black.svg'}}" width="64" style="background-color: #f28f9f;"/>{{/is}}
+                      {{#is id 360006773913}}<img class="cat-img" src="{{asset 'event_black.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
                       {{#is id 360006739494}}<img class="cat-img" src="{{asset 'summit_black.svg'}}" width="64" style="background-color: #E7AFA2;"/>{{/is}}
                       {{#is id 360005466753}}<img class="cat-img" src="{{asset 'publishing.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
                       {{#is id 360005039214}}<img class="cat-img" src="{{asset 'course.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
+
+                      {{#is id 360006803694}}<img class="cat-img" src="{{asset 'publishing.svg'}}" width="64" style="background-color: #C0CDCE;"/>{{/is}}
+                      {{#is id 360006840953}}<img class="cat-img" src="{{asset 'affiliate.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
+                      {{#is id 360006837733}}<img class="cat-img" src="{{asset 'app_black.svg'}}" width="64" style="background-color: #30A9BB;"/>{{/is}}
+                      {{#is id 360006801114}}<img class="cat-img" src="{{asset 'ebook_black.svg'}}" width="64" style="background-color: #F3F0EE;"/>{{/is}}
+                      {{#is id 360006837313}}<img class="cat-img" src="{{asset 'account.svg'}}" width="64" style="background-color: #93BEAD;"/>{{/is}}
 
 
                       <a href="#">{{name}}</a>
