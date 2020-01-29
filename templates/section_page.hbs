@@ -56,25 +56,6 @@
         </ul>
       {{/if}}
 
-      {{#if section.articles}}
-        <ul class="article-list">
-          {{#each section.articles}}
-            <li class="article-list-item {{#if promoted}} article-promoted{{/if}}">
-              {{#if promoted}}
-                <span data-title="{{t 'promoted'}}" class="icon-star"></span>
-              {{/if}}
-              <a href="{{url}}" class="article-list-link">{{title}}</a>
-              {{#if internal}}
-                <span class="icon-lock" title="{{t 'internal'}}"></span>
-              {{/if}}
-            </li>
-          {{/each}}
-        </ul>
-      {{else}}
-        <i class="section-empty">
-          <a href="{{section.url}}">{{t 'empty'}}</a>
-        </i>
-      {{/if}}
 
       {{pagination}}
 
